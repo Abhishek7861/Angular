@@ -12,6 +12,7 @@ declare var M: any;
   styleUrls: ['./employee.component.css'],
   providers: [EmployeeService]
 })
+
 export class EmployeeComponent implements OnInit {
 
   constructor(public employeeService: EmployeeService) { }
@@ -31,7 +32,6 @@ export class EmployeeComponent implements OnInit {
         office:"",
         salary:""
       }
-
   }
 
   onSubmit(form:NgForm): void {
